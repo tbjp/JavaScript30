@@ -93,6 +93,13 @@
       console.log(dev);
       dev.social.twitter = "@tibu";
       console.log(toby.social.twitter);
+      toby.social.twitter = "@toby";
+      const dev2 = structuredClone(toby);
+      dev2.social.twitter = "@tibu";
+      console.log("Original handle");
+      console.log(toby.social.twitter);
+      console.log("structuredClone handle");
+      console.log(dev2.social.twitter);
     </script>
   </body>
 </html>
